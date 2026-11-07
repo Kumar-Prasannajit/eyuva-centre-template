@@ -20,7 +20,7 @@ All centre-specific content lives in **`/content`**. The components never need e
 
 ### Images
 
-Demo placeholders live in `public/demo/`. For a real centre, add photos under `public/` (for example `public/people/vice-chancellor.webp`) and point to them from the content files. Gallery photos are numbered files in one folder per category (`1.webp`, `2.webp`, ...).
+The demo uses free Unsplash stock photos (listed in `content/images.ts`) plus placeholder avatars and logos in `public/demo/`. For a real centre, add photos under `public/` (for example `public/people/vice-chancellor.webp`) and point to them from the content files. Gallery photos are numbered files in one folder per category (`1.webp`, `2.webp`, ...).
 
 Recommended: WebP, people photos 3:4 portrait, everything else landscape around 1200px wide.
 

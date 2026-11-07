@@ -18,10 +18,11 @@ const createImages = () => {
   };
 
   for (const group of GALLERY_GROUPS) {
-    for (let i = 1; i <= group.count; i++) {
+    for (const [idx, url] of group.images.entries()) {
+      const i = idx + 1;
       images.push({
-        src: `${group.folder}/${i}.webp`,
-        thumb: `${group.folder}/${i}.webp`,
+        src: url,
+        thumb: url,
         alt: `${group.label} ${i}`,
         label: `${group.label} ${i}`,
         category: group.category,

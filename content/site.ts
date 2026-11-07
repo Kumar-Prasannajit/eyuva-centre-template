@@ -6,6 +6,8 @@
 //  in this folder.
 // ─────────────────────────────────────────────────────────────
 
+import { DEMO_PHOTOS, EVENT_PHOTOS } from "./images";
+
 export const SITE = {
   // Identity
   centreName: "BIRAC E-YUVA Center",
@@ -47,13 +49,13 @@ export const SITE = {
     "From bench to business — we provide infrastructure, mentorship, funding pathways, and a vibrant ecosystem where young minds build science-led companies that solve real-world problems.",
   ],
   aboutImages: [
-    { src: "/demo/about/1.webp", alt: "Bio-safety cabinet" },
-    { src: "/demo/about/2.webp", alt: "Lab equipment" },
-    { src: "/demo/about/3.webp", alt: "Scientists collaborating" },
+    { src: DEMO_PHOTOS.aboutLab, alt: "Researcher at a microscope" },
+    { src: DEMO_PHOTOS.aboutMicroscope, alt: "Lab equipment" },
+    { src: DEMO_PHOTOS.aboutTeam, alt: "Scientists collaborating" },
   ],
 
   // Background photo behind the fellowship panel in Programs
-  programsBackground: "/demo/events/1.webp",
+  programsBackground: EVENT_PHOTOS[5],
 
   // Footer
   footerBlurb:

@@ -5,6 +5,7 @@ import { useParams, notFound } from "next/navigation";
 import { useState } from "react";
 import { useTheme } from "../../context/ThemeContext";
 import { SITE } from "@/content/site";
+import { DEMO_PHOTOS } from "@/content/images";
 import {
   STARTUPS_DATA,
   IP_DATA,
@@ -19,7 +20,7 @@ const KNOWLEDGE_DATA = {
     category: "Startups",
     title: "Startup Success Stories",
     readTime: "5 min read",
-    bannerImage: "/demo/impact/startup.webp",
+    bannerImage: DEMO_PHOTOS.startup,
     summary: "E-YUVA incubation support has successfully translated biotechnology research into market-ready ventures, establishing registered companies, securing DPIIT recognitions, and raising seed funds.",
     items: STARTUPS_DATA
   },
@@ -27,7 +28,7 @@ const KNOWLEDGE_DATA = {
     category: "Collaborations",
     title: "Memorandums of Understanding (MoUs)",
     readTime: "4 min read",
-    bannerImage: "/demo/impact/collabs.webp",
+    bannerImage: DEMO_PHOTOS.collabs,
     summary: "Strengthening our translational research ecosystem through formal agreements with leading national research institutes, hospitals, and testing laboratories.",
     items: MOU_DATA
   },
@@ -35,7 +36,7 @@ const KNOWLEDGE_DATA = {
     category: "Research",
     title: "Scientific Publications",
     readTime: "8 min read",
-    bannerImage: "/demo/impact/publication.webp",
+    bannerImage: DEMO_PHOTOS.publication,
     summary: "Showcasing peer-reviewed research papers and academic works published by our fellows and investigators in reputed high-impact biotechnology journals.",
     items: PUBLICATIONS_DATA
   },
@@ -43,7 +44,7 @@ const KNOWLEDGE_DATA = {
     category: "Patents",
     title: "Intellectual Property & Patents",
     readTime: "6 min read",
-    bannerImage: "/demo/impact/patent.webp",
+    bannerImage: DEMO_PHOTOS.patent,
     summary: "Protecting novel biotechnology methods, chemical formulations, and software architectures engineered by our innovators.",
     items: IP_DATA
   },
@@ -51,7 +52,7 @@ const KNOWLEDGE_DATA = {
     category: "Recognition",
     title: "Awards & Accolades",
     readTime: "5 min read",
-    bannerImage: "/demo/impact/award.webp",
+    bannerImage: DEMO_PHOTOS.award,
     summary: "Celebrating the national and regional honors received by our research fellows, coordinators, and student innovators.",
     items: AWARDS_DATA
   }

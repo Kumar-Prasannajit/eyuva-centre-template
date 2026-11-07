@@ -7,6 +7,7 @@
 // ─────────────────────────────────────────────────────────────
 
 import { SITE } from "./site";
+import { DEMO_PHOTOS } from "./images";
 
 export interface EyuvaProject {
   projectId: string;
@@ -173,7 +174,7 @@ export const EYUVA_PROJECTS: EyuvaProject[] = [
     projectRefNo: "BT/EF0000/01/24",
     affiliation: `${SITE.university}, ${SITE.city}`,
     mentor: "Dr. Mentor Name, Assistant Professor",
-    groupImage: "/demo/projects/1.webp",
+    groupImage: DEMO_PHOTOS.project1,
     status: "Completed",
     timeline: { startDate: "01/12/2024", stipulatedCompletionDate: "30/11/2025", extensionMonths: "0", finalCompletionDate: "30/11/2025" },
     metrics: { prototypeEstablished: "Yes", publications: "01 Published", ipDetails: null, thirdPartyValidation: null, startupCreated: null, fundingRaisedLakhs: null },
@@ -190,7 +191,7 @@ export const EYUVA_PROJECTS: EyuvaProject[] = [
     projectRefNo: "BT/EF0000/02/24",
     affiliation: "Partner Medical College",
     mentor: "Dr. Mentor Name, Professor & Head, Community Medicine",
-    groupImage: "/demo/projects/2.webp",
+    groupImage: DEMO_PHOTOS.project2,
     status: "Completed",
     timeline: { startDate: "01/12/2024", stipulatedCompletionDate: "30/11/2025", extensionMonths: "0", finalCompletionDate: "30/11/2025" },
     metrics: { prototypeEstablished: "Yes", publications: null, ipDetails: "01 Patent Filed", thirdPartyValidation: null, startupCreated: null, fundingRaisedLakhs: null },
@@ -207,7 +208,7 @@ export const EYUVA_PROJECTS: EyuvaProject[] = [
     projectRefNo: "BT/EF0000/03/25",
     affiliation: `${SITE.university}, ${SITE.city}`,
     mentor: "Dr. Mentor Name, Associate Professor",
-    groupImage: "/demo/projects/3.webp",
+    groupImage: DEMO_PHOTOS.project3,
     status: "Ongoing",
     timeline: { startDate: "01/12/2025", stipulatedCompletionDate: "30/11/2026" },
     metrics: { prototypeEstablished: "In Progress", publications: null, ipDetails: null, thirdPartyValidation: null, startupCreated: null, fundingRaisedLakhs: null },
@@ -225,7 +226,7 @@ export const KNOWLEDGE_CARDS = [
   {
     title: "Startup Success Stories",
     href: "/knowledge/startup-success-stories",
-    image: "/demo/impact/startup.webp",
+    image: DEMO_PHOTOS.startup,
     readTime: "5 min read",
     category: "Startups",
     description: "Explore biotech startup journeys from lab validation to market entry, pilot studies, and venture success.",
@@ -233,7 +234,7 @@ export const KNOWLEDGE_CARDS = [
   {
     title: "Memorandums of Understanding (MoUs)",
     href: "/knowledge/mou",
-    image: "/demo/impact/collabs.webp",
+    image: DEMO_PHOTOS.collabs,
     readTime: "4 min read",
     category: "Collaborations",
     description: "Academic, research, and corporate partnerships driving knowledge transfer and co-incubation.",
@@ -241,7 +242,7 @@ export const KNOWLEDGE_CARDS = [
   {
     title: "Scientific Publications",
     href: "/knowledge/publications",
-    image: "/demo/impact/publication.webp",
+    image: DEMO_PHOTOS.publication,
     readTime: "8 min read",
     category: "Research",
     description: "Peer-reviewed scientific articles, journals, and conference papers authored by E-YUVA research fellows.",
@@ -249,7 +250,7 @@ export const KNOWLEDGE_CARDS = [
   {
     title: "Intellectual Property & Patents",
     href: "/knowledge/ip",
-    image: "/demo/impact/patent.webp",
+    image: DEMO_PHOTOS.patent,
     readTime: "6 min read",
     category: "Patents",
     description: "Granted patents, filings, utility models, and technology transfers developed at the center.",
@@ -257,7 +258,7 @@ export const KNOWLEDGE_CARDS = [
   {
     title: "Awards & Accolades",
     href: "/knowledge/awards",
-    image: "/demo/impact/award.webp",
+    image: DEMO_PHOTOS.award,
     readTime: "5 min read",
     category: "Recognition",
     description: "Awards, national honors, hackathon achievements, and recognition received by E-YUVA innovators.",

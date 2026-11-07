@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { useTheme } from "../context/ThemeContext";
 import { SITE } from "@/content/site";
+import { DEMO_PHOTOS } from "@/content/images";
 import {
   LEADERSHIP,
   CENTER_LEADERSHIP,
@@ -366,7 +367,7 @@ function EyuvaProjectCard({
       {/* Image */}
       <div className="relative w-full" style={{ height: 160 }}>
         <Image
-          src={project.groupImage || "/demo/projects/1.webp"}
+          src={project.groupImage || DEMO_PHOTOS.project1}
           alt={project.title}
           fill
           sizes="(max-width: 768px) 100vw, 33vw"

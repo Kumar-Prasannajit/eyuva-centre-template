@@ -1,6 +1,7 @@
 // About section: focus-area capsules and the impact dashboard numbers.
 // Demo values — replace with the centre's real figures.
 import { SITE } from "./site";
+import { DEMO_PHOTOS } from "./images";
 
 export const CAPSULES = [
   "Innovation",
@@ -20,7 +21,7 @@ export const STATS = [
       "Founded under BIRAC's E-YUVA scheme to nurture biotech innovation and entrepreneurship.",
     gridArea: "established",
     hero: true,
-    bgImg: "/demo/impact/campus.webp",
+    bgImg: DEMO_PHOTOS.campus,
   },
 
   {
@@ -31,7 +32,7 @@ export const STATS = [
       "Students supported through innovation, startup incubation and entrepreneurship programs.",
     gridArea: "students",
     tall: true,
-    bgImg: "/demo/impact/students.webp",
+    bgImg: DEMO_PHOTOS.students,
   },
 
   {
@@ -41,7 +42,7 @@ export const STATS = [
     description:
       "Biotech and innovation-driven startups successfully incubated through the center.",
     gridArea: "research",
-    bgImg: "/demo/impact/startup.webp",
+    bgImg: DEMO_PHOTOS.startup,
   },
 
   {
@@ -51,7 +52,7 @@ export const STATS = [
     description:
       "External funding secured by students and startups associated with the E-YUVA ecosystem.",
     gridArea: "grants",
-    bgImg: "/demo/impact/grants.webp",
+    bgImg: DEMO_PHOTOS.grants,
   },
 
   {
@@ -61,7 +62,7 @@ export const STATS = [
     description:
       "Intellectual property filings generated from student and startup innovations.",
     gridArea: "awards",
-    bgImg: "/demo/impact/patent.webp",
+    bgImg: DEMO_PHOTOS.patent,
   },
 
   {
@@ -71,7 +72,7 @@ export const STATS = [
     description:
       "Research publications contributed to reputed journals and scientific conferences.",
     gridArea: "publications",
-    bgImg: "/demo/impact/publication.webp",
+    bgImg: DEMO_PHOTOS.publication,
   },
 
   {
@@ -82,7 +83,7 @@ export const STATS = [
       "Women innovators and entrepreneurs supported through mentorship and incubation programs.",
     gridArea: "collabs",
     highlight: true,
-    bgImg: "/demo/impact/women.webp",
+    bgImg: DEMO_PHOTOS.women,
   },
 ];
 
