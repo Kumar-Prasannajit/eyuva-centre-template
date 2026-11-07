@@ -16,11 +16,12 @@ All centre-specific content lives in **`/content`**. The components never need e
 | `content/events.ts` | Conferences, workshops, hackathons, webinars, FDPs, bootcamps, community and national outreach |
 | `content/knowledge.ts` | Startups, patents/IP, MoUs, publications, awards |
 | `content/partners.ts` | Knowledge, industry and academic partners and supported institutes |
-| `content/gallery.ts` | Gallery photo folders and counts |
+| `content/gallery.ts` | Gallery tabs and their photos |
+| `content/images.ts` | Demo stock photo URLs |
 
 ### Images
 
-The demo uses free Unsplash stock photos (listed in `content/images.ts`) plus placeholder avatars and logos in `public/demo/`. For a real centre, add photos under `public/` (for example `public/people/vice-chancellor.webp`) and point to them from the content files. Gallery photos are numbered files in one folder per category (`1.webp`, `2.webp`, ...).
+The demo uses free Unsplash stock photos (listed in `content/images.ts`) plus placeholder avatars and logos in `public/demo/`. For a real centre, add photos under `public/` (for example `public/people/vice-chancellor.webp`) and point to them from the content files. Gallery photos are listed per tab in `content/gallery.ts`.
 
 Recommended: WebP, people photos 3:4 portrait, everything else landscape around 1200px wide.
 
@@ -28,7 +29,7 @@ Recommended: WebP, people photos 3:4 portrait, everything else landscape around 
 
 1. Edit `content/site.ts` (name, location, contacts, logo).
 2. Replace people, events, partners and knowledge data.
-3. Add photos and update gallery counts.
+3. Add photos and update the gallery lists.
 4. `npm run build` to check for errors.
 5. Deploy (Vercel or any Node host) and connect the centre's domain.
 
